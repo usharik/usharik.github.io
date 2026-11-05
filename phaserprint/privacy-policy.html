@@ -27,9 +27,9 @@
 <body>
 <main>
   <h1>Phaser Print – Privacy Policy</h1>
-  <p class="meta">Application: <strong>Phaser Print</strong> (Android, package <code>ru.usharik.phaserprint</code>)<br>
+  <p class="meta">Application: <strong>Phaser Print</strong> (Android, package <code>ru.usharik.phaserprint</code>; iPhone, bundle ID <code>ru.usharik.phaserprint</code>)<br>
     Developer: Alexey Usharik (“we”, “us”)<br>
-    Effective date: 18 September 2026 · Last updated: 4 November 2026</p>
+    Effective date: 18 September 2026 · Last updated: 5 November 2026</p>
 
   <div class="summary">
     <strong>Summary</strong>
@@ -40,11 +40,12 @@
       <li>Release builds may use Firebase Crashlytics and Firebase Analytics. Crashlytics receives crash reports and technical error diagnostics; Analytics receives limited, non-document usage events.</li>
       <li>Google AdMob may process advertising and device information to request and measure ads. The app does not send document contents, document names or printer network addresses to Google services.</li>
       <li>Saved printer names and network addresses are stored locally on your device and can be removed in the app.</li>
+      <li>The iPhone version collects no data at all: it contains no ads, analytics, crash reporting or purchases (section 7).</li>
     </ul>
   </div>
 
   <h2 id="scope">1. Scope</h2>
-  <p>This Privacy Policy describes how the Phaser Print Android application (the “App”) handles information. The App is an unofficial third-party printing utility and is not affiliated with or endorsed by Xerox Corporation.</p>
+  <p>This Privacy Policy describes how the Phaser Print applications for Android and iPhone (the “App”) handle information. Sections 2–6 describe the Android version; section 7 describes the iPhone version. The App is an unofficial third-party printing utility and is not affiliated with or endorsed by Xerox Corporation.</p>
 
   <h2 id="data">2. Information the App handles</h2>
   <h3>2.1 Documents selected for printing</h3>
@@ -78,6 +79,8 @@
     <tr><td>Saved printers</td><td>Until you remove them or clear app data</td><td>Use the delete action next to a printer, or clear the App's data in Android settings.</td></tr>
     <tr><td>Ad removal status</td><td>Until you clear app data or uninstall the App; restored from Google Play when the App starts again</td><td>Clear the App's data in Android settings. Purchase records are kept by Google Play under its own policies.</td></tr>
     <tr><td>Selected document</td><td>Only as needed for the current print operation</td><td>Cancel or finish the print job; temporary processing data is released by the App.</td></tr>
+    <tr><td>Saved printers and settings (iPhone)</td><td>Until you remove them or delete the App</td><td>Remove the printer in the App, or delete the App.</td></tr>
+    <tr><td>Copies of picked or shared documents (iPhone)</td><td>Until you open another document, at most a day after the App next starts</td><td>Open another document, or delete the App.</td></tr>
   </table>
   <p>The App does not create user accounts. Android removes the App’s private data when you uninstall the App.</p>
 
@@ -95,13 +98,23 @@
   <h3>6.5 External links</h3>
   <p>If you open an external link, your browser or the selected external app’s privacy policy applies.</p>
 
-  <h2 id="security">7. Security</h2>
+  <h2 id="iphone">7. iPhone version</h2>
+  <h3>7.1 Documents</h3>
+  <p>You choose a PDF, image or plain-text file in the system document picker, or share it to the App from another app such as Files, Photos, Mail or Safari. iOS gives the App a copy of the document. The App renders it on your iPhone and sends the print data only to the printer you selected. Documents are not uploaded to the developer or to any third party. The App deletes earlier copies when you open another document, and copies received more than a day ago when it starts.</p>
+  <h3>7.2 Local network</h3>
+  <p>The App asks for the iOS Local Network permission. It uses Bonjour to find printers on your Wi‑Fi network and a TCP connection, usually to port <code>9100</code>, to send print jobs. As described in section 3, this protocol is not encrypted; use the App on a trusted network.</p>
+  <h3>7.3 Stored on your iPhone</h3>
+  <p>The App stores the name, local network address and port of printers you add, your print settings and the language you choose. They stay on your iPhone until you remove a printer in the App or delete the App.</p>
+  <h3>7.4 No collection and no third-party services</h3>
+  <p>The iPhone version contains no Firebase, Google AdMob or other third-party SDK. It shows no ads, offers no purchases and does not collect analytics, crash reports, identifiers or location. It does not track you. If you choose to share crash reports with app developers in iOS settings, Apple handles them under its own policy.</p>
+
+  <h2 id="security">8. Security</h2>
   <p>Documents are processed locally and are sent only after your explicit print action. Network security also depends on the Wi‑Fi network and printer protocol you use; no method of transmission or storage is completely secure.</p>
 
-  <h2 id="children">8. Children</h2>
+  <h2 id="children">9. Children</h2>
   <p>The App is a general-audience utility and is not directed to children under 13 (or the equivalent minimum age in your jurisdiction). We do not knowingly collect personal information from children.</p>
 
-  <h2 id="changes">9. Changes and contact</h2>
+  <h2 id="changes">10. Changes and contact</h2>
   <p>We may update this Privacy Policy when the App changes or when required by law. The current version is always available at <a href="https://usharik.github.io/phaserprint/privacy-policy.html">https://usharik.github.io/phaserprint/privacy-policy.html</a>; the “Last updated” date above indicates the latest revision.</p>
   <p>Questions or concerns can be sent to <strong>Alexey Usharik</strong> through <a href="https://github.com/usharik/XeroxPhaserPrint/issues" rel="noopener">GitHub Issues</a>.</p>
 
