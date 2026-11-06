@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy – MySongBook</title>
-  <meta name="description" content="Privacy Policy for the MySongBook Android application (ru.usharik.mysongbook).">
+  <meta name="description" content="Privacy Policy for the MySongBook apps for Android, iPhone and iPad (ru.usharik.mysongbook).">
   <style>
     :root { color-scheme: light dark; --accent: #1565C0; --text: #1f2933; --muted: #52606d; --bg: #ffffff; --card: #f5f7fa; --border: #d9e2ec; }
     @media (prefers-color-scheme: dark) { :root { --text: #e4e7eb; --muted: #9aa5b1; --bg: #121417; --card: #1b1f24; --border: #323a45; --accent: #64b5f6; } }
@@ -27,105 +27,130 @@
 <body>
 <main>
   <h1>MySongBook – Privacy Policy</h1>
-  <p class="meta">Application: <strong>MySongBook</strong> (Android, package <code>ru.usharik.mysongbook</code>)<br>
+  <p class="meta">Application: <strong>MySongBook</strong> for Android (package <code>ru.usharik.mysongbook</code>, Google Play) and for iPhone and iPad (bundle ID <code>ru.usharik.mysongbook</code>, App Store)<br>
      Developer: Aleksei Usharovskii (“we”, “us”), sole trader, IČO 17943744, Netovice 47, 274 01 Slaný, Czech Republic<br>
-     Effective date: 9 September 2026 · Last updated: 7 October 2026</p>
+     Effective date: 9 September 2026 · Last updated: 6 November 2026</p>
 
   <div class="summary">
     <strong>Summary</strong>
     <ul>
-      <li>MySongBook is an offline‑first songbook. Your songs are stored on your device; their text leaves it only if you turn on backup. Song titles appear in usage analytics (Section 2.3).</li>
-      <li>Optional backup uses your own Google Drive (hidden app folder) or a local folder you choose. We do not operate any server of our own and cannot see your songs.</li>
-      <li>The App shows banner ads from Google AdMob. AdMob processes your device’s advertising ID, IP address and ad interactions (Section 4.3).</li>
-      <li>The App uses Firebase Analytics and Firebase Crashlytics from Google: usage events, including the titles of songs you work with, and crash reports (Section 4.2).</li>
-      <li>We do not sell personal data.</li>
+      <li>MySongBook is an offline‑first songbook. Your songs and set lists are stored on your device; they leave it only if you turn on backup, export a ZIP file or share a song yourself.</li>
+      <li>Optional backup uses your own Google Drive (hidden app folder) or a folder you choose. We do not operate any server of our own and cannot see your songs.</li>
+      <li>The App shows banner ads from Google AdMob. In the European Economic Area, the United Kingdom and Switzerland it first asks for your consent with Google’s consent form. On iPhone and iPad the advertising identifier (IDFA) is used only if you allow tracking (Section 4).</li>
+      <li>The App uses Firebase Analytics and Firebase Crashlytics from Google: technical usage events and crash reports. The titles and texts of your songs are not sent (Section 5).</li>
+      <li>The optional “Remove ads” purchase is handled by Google Play or the App Store; we never see your payment details (Section 6).</li>
       <li>Signing in with Google is optional and is used only to access the Google Drive app folder for backup.</li>
+      <li>We do not sell personal data.</li>
     </ul>
   </div>
 
   <h2 id="scope">1. Scope</h2>
-  <p>This Privacy Policy describes how the MySongBook Android application (the “App”) handles information when you use it. It applies to the App as distributed on Google Play and to any other build of the App published by us. By using the App you agree to the practices described here.</p>
+  <p>This Privacy Policy describes how the MySongBook applications for Android and for iPhone and iPad (together the “App”) handle information when you use them. It applies to the App as distributed on Google Play and on the App Store and to any other build of the App published by us. Both versions share the same features and the same code for songs, backup and analytics; where they differ, the difference is stated. By using the App you agree to the practices described here.</p>
 
   <h2 id="data">2. Information the App handles</h2>
 
   <h3>2.1 Content you create (stored on your device)</h3>
-  <p>The App stores the songs you add in a local database on your device. A song may contain: title, music author, lyric author, album, genre, an optional recording link (URL), capo setting, chord voicing preferences, the song text with chords, an optional imported Guitar Pro tablature file, and timestamps. This content is created and controlled entirely by you. It is processed on your device; the song text is transmitted only if you enable backup (Section 3). Song titles and technical details are included in usage analytics (Section 2.3).</p>
+  <p>The App stores the songs you add in a local database on your device. A song may contain: title, music author, lyric author, album, genre, an optional recording link (URL), capo setting, chord voicing preferences, the song text with chords, an optional imported Guitar Pro tablature file, and timestamps. Set lists contain a name, optional notes and event date, the songs they include and a key for each entry. This content is created and controlled entirely by you. It is processed on your device and is transmitted only if you enable backup (Section 3), export it (Section 3.3) or share it (Section 7).</p>
 
   <h3>2.2 Google account information (only if you sign in)</h3>
-  <p>If you choose the <em>Google Drive</em> backup option, the App asks you to sign in with your Google account using Google Sign‑In. The App receives your account <strong>e‑mail address</strong> and <strong>display name</strong> and shows them in the backup settings so you can see which account is connected. This information is kept in memory only while the App is running, is not written to the App’s database or to persistent storage, and is discarded when you sign out. OAuth tokens are issued, stored and refreshed by Google Play services on your device; the App never has access to your Google password.</p>
+  <p>If you choose the <em>Google Drive</em> backup option, the App asks you to sign in with your Google account. The App receives your account <strong>e‑mail address</strong> and <strong>display name</strong> and shows them in the backup settings so you can see which account is connected. The App never has access to your Google password.</p>
+  <ul>
+    <li><strong>Android:</strong> sign‑in uses Android’s Credential Manager (“Sign in with Google”) and Google Play services. The e‑mail address and display name are kept in the App’s private storage on your device so that the App can request access to the Drive app folder for that account; they are deleted when you sign out. OAuth tokens are issued, stored and refreshed by Google Play services.</li>
+    <li><strong>iPhone and iPad:</strong> sign‑in uses Google Sign‑In for iOS. The sign‑in, including its tokens, your e‑mail address and display name, is kept by Google Sign‑In in the iOS Keychain on your device and is removed when you sign out.</li>
+  </ul>
+  <p>This information is not sent to us.</p>
 
   <h3>2.3 Information sent to Google services</h3>
   <ul>
-    <li><strong>Advertising (Google AdMob):</strong> advertising ID and other device identifiers, IP address, device and app information, app interactions, diagnostics and ad interactions (Section 4.3). The AdMob SDK adds the <code>AD_ID</code> permission, which lets the App read the advertising ID.</li>
-    <li><strong>Usage analytics (Firebase Analytics):</strong> an app‑instance identifier, device model, OS version, approximate country derived from the IP address, and events about using the App: automatic events such as the first launch, sessions and screens, and our own events when a song is created, edited, opened, deleted, backed up or synced. Song events include the song’s title (up to 100 characters) and its first 30 characters, its random and local IDs, type (lyrics, tab or ABC), size, a hash of its text, its revision and whether it has an attachment; backup and sync events include technical details of the run. The song text itself is not sent (Section 4.2).</li>
-    <li><strong>Crash reports (Firebase Crashlytics):</strong> the stack trace, device model, OS version, app version, an installation identifier and the latest analytics events (“breadcrumbs”) when the App crashes (Section 4.2).</li>
+    <li><strong>Advertising (Google AdMob):</strong> the advertising identifier (on Android the advertising ID; on iPhone and iPad the IDFA, only if you allow tracking), IP address, device and app information, app interactions, diagnostics and ad interactions (Section 4).</li>
+    <li><strong>Usage analytics (Firebase Analytics):</strong> an app‑instance identifier, device model, OS version, approximate country derived from the IP address, and events about using the App: automatic events such as the first launch, sessions and screens, and our own events when a song is created, edited, opened or deleted, backed up or synced. Song events contain technical details only: the song’s random and local IDs, its type (lyrics, tab or ABC), size and text length, its revision and whether it has an attachment or is deleted. Backup and sync events contain technical details of the run (destination type, trigger, counts, error type). <strong>The title and the text of a song are not sent</strong> (Section 5).</li>
+    <li><strong>Crash reports (Firebase Crashlytics):</strong> the stack trace, device model, OS version, app version, an installation identifier, the screens and analytics events recorded just before the crash (“breadcrumbs”) and the state of the ad consent; for failed syncs, the type of error without its message (Section 5).</li>
   </ul>
-  <p>Analytics and crash reporting are turned off in debug builds, which also show only Google’s test ads. The App does not collect your precise location, contacts, photos, microphone, camera or SMS data, and no account is created with us.</p>
+  <p>Analytics and crash reporting are turned off in development builds, which also show only Google’s test ads. The App does not collect your precise location, contacts, photos, microphone, camera or SMS data, and no account is created with us.</p>
 
   <h2 id="backup">3. Backup and synchronisation</h2>
-  <p>Backup is optional and off by default. You can choose one of two destinations in <em>Backup</em> settings:</p>
+  <p>Backup is optional: nothing is uploaded until you sign in with Google or choose a folder in the <em>Backup</em> settings. You can choose one of two destinations:</p>
 
   <h3>3.1 Google Drive (hidden application data folder)</h3>
-  <p>The App uses the Google Drive API with the restricted <code>drive.appdata</code> scope. This scope grants access <strong>only</strong> to a hidden, application‑specific folder (<code>appDataFolder</code>) in <em>your own</em> Google Drive. The App cannot read, modify or delete any of your other Drive files. Within that folder the App stores, for each song, a <code>meta.json</code> file (metadata), a <code>content.txt</code> file (song text with chords) and, when present, a <code>score.gp</code> file (imported tablature). Songs you delete are first marked as deleted so that the deletion propagates to your other devices, and the corresponding files are subsequently removed.</p>
+  <p>The App uses the Google Drive API with the restricted <code>drive.appdata</code> scope. This scope grants access <strong>only</strong> to a hidden, application‑specific folder (<code>appDataFolder</code>) in <em>your own</em> Google Drive. The App cannot read, modify or delete any of your other Drive files. Within that folder the App stores each saved version of a song as one file containing its metadata, its text with chords and, when present, the imported tablature, and each saved version of a set list as one file. Versions written by older releases of the App (a <code>songs/</code> folder with <code>meta.json</code>, <code>content.txt</code> and <code>score.gp</code> files) are still read. When you delete a song, the App saves a version marked as deleted so that the deletion reaches your other devices; earlier versions stay in the folder until you delete the App’s data in Google Drive (Section 9).</p>
+  <p>The App syncs after you change something and when you start a sync in the <em>Backup</em> settings. On Android a sync may run shortly after you leave the App (Android WorkManager). On iPhone and iPad the App may also run a short background task, scheduled by iOS, to fetch changes from your other devices while the App is closed; you can turn this off in <em>Settings → General → Background App Refresh</em>.</p>
   <p>Data travels directly between your device and Google’s servers over encrypted connections (HTTPS). We do not run an intermediate server and have no access to the contents of your Drive. Google’s handling of data stored in Google Drive is governed by the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
   <p><strong>Google API Services User Data Policy.</strong> MySongBook’s use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is used solely to provide the backup and restore feature you requested; it is not used for advertising, is not sold, and is not transferred to humans or third parties except as necessary to provide the feature, to comply with applicable law, or as part of a merger or acquisition with prior notice to you.</p>
 
   <h3>3.2 Local folder</h3>
-  <p>Alternatively you can select a folder on your device or removable storage using the Android system file picker (Storage Access Framework). The App writes the same <code>songs/</code> structure described above into the folder you selected and keeps a persistable permission for that folder only. No other part of your storage is accessed. Folder contents are never uploaded by the App; if the folder you choose is itself synchronised by another app (for example a cloud‑storage client), that app’s privacy policy applies to the copies it makes.</p>
+  <p>Alternatively you can select a folder for backup. On Android you pick it with the Android system file picker (Storage Access Framework) and the App keeps a persistable permission for that folder only. On iPhone and iPad you pick it in the Files app (on the device, in iCloud Drive or with another storage provider) and the App keeps a security‑scoped bookmark to that folder only. The App writes the same files described above into the folder you selected; no other part of your storage is accessed. Folder contents are never uploaded by the App; if the folder you choose is itself synchronised by iCloud Drive or another app (for example a cloud‑storage client), that service’s privacy policy applies to the copies it makes.</p>
 
-  <h3>3.3 Switching or turning off backup</h3>
-  <p>When you switch from one backup destination to another, the App migrates your songs to the new destination and removes the <code>songs/</code> folder from the previous one. Signing out of Google stops all communication with Google Drive; your songs remain on your device.</p>
+  <h3>3.3 ZIP export and import</h3>
+  <p>In the <em>Backup</em> settings you can export all songs and set lists to a ZIP file and import such a file. The App writes or reads only the file you choose in the system file picker. What you do with an exported file (for example sending it to someone) is up to you.</p>
 
-  <h2 id="google">4. Google Play, Google Play services and Firebase</h2>
-  <h3>4.1 Google Play and Play services</h3>
-  <p>The App is distributed through Google Play and relies on Google Play services on your device for Google Sign‑In and for secure token handling. Google Play may independently collect information about app installs, updates and, if you have enabled it in your device settings, aggregated crash and performance statistics (“Android vitals”). This collection is performed by Google under the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and the <a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play Terms of Service</a>. Aggregated statistics shown to us in the Google Play Console are used only to maintain and improve the App.</p>
-  <h3>4.2 Firebase</h3>
-  <p>The App is registered in a Google Cloud / Firebase project, which also provides the OAuth 2.0 client credentials for Google Sign‑In and Google Drive. Release builds include two Firebase SDKs:</p>
+  <h3>3.4 Switching or turning off backup</h3>
+  <p>When you switch to another backup destination, the App copies your songs and set lists to the new destination. The previous destination is not cleared; you can delete its contents yourself (Section 9). Signing out of Google stops all communication with Google Drive; your songs remain on your device.</p>
+
+  <h2 id="ads">4. Advertising and your consent</h2>
+  <h3>4.1 Google AdMob</h3>
+  <p>The App shows banner ads from <strong>Google AdMob</strong> on the home, song list and category list screens. When an ad is requested or shown, Google and its partners may process your device’s advertising identifier, IP address (and the approximate location derived from it), device and app information, and ad interactions, under the <a href="https://policies.google.com/technologies/ads" rel="noopener">Google advertising policies</a> and the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>. The App does not pass your songs to AdMob. After you buy “Remove ads” (Section 6.3), the App requests no more ads.</p>
+  <h3>4.2 Consent in the EEA, the United Kingdom and Switzerland</h3>
+  <p>On both Android and iOS the App uses Google’s User Messaging Platform, a consent management platform certified under the IAB Transparency and Consent Framework. Where required, before any ad is requested it asks whether Google and its partners may use your data for personalised ads and the other listed purposes. You can accept, decline or choose purposes one by one; if you decline, you may still see non‑personalised ads. To change or withdraw your choice, tap the <em>Privacy settings</em> button (shield icon) at the top of the App’s home screen. Your choice is stored on your device.</p>
+  <h3>4.3 App Tracking Transparency (iPhone and iPad)</h3>
+  <p>On iPhone and iPad, the App Tracking Transparency prompt of iOS asks whether the App may track you across other companies’ apps and websites, which lets Google use your advertising identifier (IDFA) for personalised ads. AdMob receives the IDFA only if you choose <em>Allow</em>. If you choose <em>Ask App Not to Track</em>, or if tracking is turned off on your device, you still see ads, but they are not personalised by the IDFA. You can change this at any time in <em>Settings → Privacy &amp; Security → Tracking</em>.</p>
+  <h3>4.4 Advertising ID on Android</h3>
+  <p>The AdMob SDK adds the <code>AD_ID</code> permission, which lets the App read the Android advertising ID. You can reset or delete your advertising ID, or opt out of ad personalisation, in Android settings (<em>Privacy → Ads</em>).</p>
+
+  <h2 id="firebase">5. Firebase Analytics and Crashlytics</h2>
+  <p>The App is registered in a Google Cloud / Firebase project, which also provides the OAuth 2.0 client credentials for Google Sign‑In and Google Drive. Release builds on both platforms include two Firebase SDKs:</p>
   <ul>
-    <li><strong>Firebase Analytics</strong> – usage events described in Section 2.3. We use them to understand how the App is used and to find problems with saving and syncing songs. Google keeps this data according to the project’s data‑retention setting.</li>
+    <li><strong>Firebase Analytics</strong> – usage events described in Section 2.3. We use them to understand how the App is used and to find problems with saving and syncing songs. Each installation is identified by an app‑instance identifier; on iPhone and iPad Firebase also reads the identifier for vendor (IDFV), and it may use the IDFA only if you allowed tracking (Section 4.3). Google keeps this data according to the project’s data‑retention setting.</li>
     <li><strong>Firebase Crashlytics</strong> – crash reports, used only to find and fix bugs. Google starts deleting them 90 days after they are collected.</li>
   </ul>
-  <p>Google processes this data as our processor under the <a href="https://firebase.google.com/terms/data-processing-terms" rel="noopener">Firebase Data Processing Terms</a> and the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>. The App does not use Firebase Cloud Messaging, Authentication, Firestore, Realtime Database or Remote Config.</p>
-  <h3>4.3 Advertising</h3>
-  <p>The App shows banner ads from <strong>Google AdMob</strong> on the home, song list and category list screens. When an ad is requested or shown, Google and its partners may process your device’s advertising ID, IP address (and the approximate location derived from it), device and app information, and ad interactions, under the <a href="https://policies.google.com/technologies/ads" rel="noopener">Google advertising policies</a> and the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>. You can reset or delete your advertising ID, or opt out of ad personalisation, in Android settings (<em>Privacy → Ads</em>). The App does not pass your songs to AdMob.</p>
+  <p>This data is linked to an identifier of your installation, not to your name, your Google account or your songs. Google processes it as our processor under the <a href="https://firebase.google.com/terms/data-processing-terms" rel="noopener">Firebase Data Processing Terms</a> and the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>. The App does not use Firebase Cloud Messaging, Authentication, Firestore, Realtime Database or Remote Config.</p>
 
-  <h2 id="thirdparty">5. Third‑party components and external links</h2>
+  <h2 id="stores">6. Google Play, the App Store and purchases</h2>
+  <h3>6.1 Google Play (Android)</h3>
+  <p>The Android App is distributed through Google Play and relies on Google Play services on your device for Google sign‑in and for secure token handling. The App may show Google Play’s rating dialog. Google Play may independently collect information about app installs, updates and, if you have enabled it in your device settings, aggregated crash and performance statistics (“Android vitals”). This collection is performed by Google under the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and the <a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play Terms of Service</a>. Aggregated statistics shown to us in the Google Play Console are used only to maintain and improve the App.</p>
+  <h3>6.2 App Store (iPhone and iPad)</h3>
+  <p>The iOS App is distributed through Apple’s App Store. The App may show the App Store’s rating dialog. Apple may collect information about downloads, purchases and app performance, and provides us with crash reports and usage statistics only if you agreed to share them with app developers in iOS settings. This is governed by the <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a>.</p>
+  <h3>6.3 “Remove ads” purchase</h3>
+  <p>The App offers an optional one‑time purchase that removes all ads. It is processed by Google Play Billing on Android and by Apple’s App Store (StoreKit) on iPhone and iPad. Google or Apple handles the payment; we do not receive your payment details or your store account. The App only checks with the store whether the purchase is owned, so that ads stay off, including after reinstalling or on another device signed in to the same store account.</p>
+
+  <h2 id="thirdparty">7. Third‑party components and external links</h2>
   <ul>
-    <li><strong>Google API Client for Java / Google Sign‑In</strong> – used only for the Google Drive backup described in Section 3.</li>
-    <li><strong>alphaTab</strong> – an open‑source music notation library used to read Guitar Pro files. Parsing happens entirely on your device; files are not uploaded.</li>
-    <li><strong>Chord library</strong> – chord diagrams are computed from a database bundled inside the App; no online lookup is performed.</li>
-    <li><strong>Recording links</strong> – if you add a recording URL to a song and tap it, the App hands the link to your default browser or media app. The App does not embed a web view and has no control over the website you open.</li>
+    <li><strong>Google Sign‑In and the Google Drive API</strong> – used only for the Google Drive backup described in Section 3.</li>
+    <li><strong>alphaTab</strong> – an open‑source music notation library used to read and play Guitar Pro files. Parsing and playback happen entirely on your device; files are not uploaded. On iPhone and iPad alphaTab runs in a web view that loads only files bundled with the App.</li>
+    <li><strong>Chord library</strong> – chord diagrams and sounds are computed from data bundled inside the App; no online lookup is performed.</li>
+    <li><strong>Recording links</strong> – if you add a recording URL to a song and tap it, the App hands the link to your default browser or media app. The App does not load the website itself and has no control over the website you open.</li>
     <li><strong>Sharing</strong> – when you use <em>Share</em> or <em>Copy</em>, the song text is passed to the app you select or to the clipboard. This happens only on your explicit action.</li>
   </ul>
 
-  <h2 id="use">6. How information is used</h2>
-  <p>Information handled by the App is used to: store and display your songs; back up and restore them across your devices when you enable backup; show which Google account is connected; understand how the App is used and fix bugs (Firebase); and show ads (AdMob). We do not sell or rent your information, and we share it only with the Google services described above.</p>
+  <h2 id="use">8. How information is used and legal bases</h2>
+  <p>Information handled by the App is used to: store and display your songs and set lists; back up and restore them across your devices when you enable backup; show which Google account is connected; understand how the App is used and fix bugs (Firebase); show ads (AdMob); and keep ads off after a purchase. Personalised ads in the regions listed in Section 4.2 rely on your consent, and on iPhone and iPad tracking relies on your permission. Analytics, crash reports and non‑personalised ads rely on our legitimate interest in keeping a free app working, improving it and paying for its development. We do not sell or rent your information, and we share it only with the Google and Apple services described above.</p>
 
-  <h2 id="retention">7. Data retention and deletion</h2>
+  <h2 id="retention">9. Data retention and deletion</h2>
   <table>
     <tr><th>Where</th><th>How long</th><th>How to delete</th></tr>
-    <tr><td>Local database on your device</td><td>Until you delete a song or uninstall the App</td><td>Delete individual songs in the App, or uninstall the App (Android removes all app data).</td></tr>
-    <tr><td>Your Google Drive app folder</td><td>Until you delete the songs or disconnect the App</td><td>Delete songs in the App (deletions are synced); or in Google Drive open <em>Settings → Manage apps → MySongBook → Delete hidden app data</em>; or revoke the App’s access at <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.</td></tr>
-    <tr><td>Local backup folder</td><td>Until you delete the files</td><td>Delete the <code>songs/</code> folder with any file manager, or switch backup destination in the App.</td></tr>
-    <tr><td>Google account e‑mail and name</td><td>In memory only, while signed in</td><td>Sign out in the App’s Backup settings.</td></tr>
+    <tr><td>Local database and settings on your device</td><td>Until you delete a song or set list, or remove the App</td><td>Delete individual songs or set lists in the App. Uninstalling the App on Android, or deleting it on iPhone or iPad, removes all its data from the device.</td></tr>
+    <tr><td>Your Google Drive app folder</td><td>Until you delete the App’s data in Google Drive</td><td>In Google Drive on the web open <em>Settings → Manage apps → MySongBook → Options → Delete hidden app data</em>. You can also revoke the App’s access in your Google Account (<em>Data &amp; privacy → Third‑party apps and services</em>, or <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>). Deleting a song in the App marks it deleted on all your devices; earlier versions remain in the folder until you delete the hidden app data.</td></tr>
+    <tr><td>Local backup folder and exported ZIP files</td><td>Until you delete the files</td><td>Delete the backup files or the ZIP file with any file manager or the Files app.</td></tr>
+    <tr><td>Google account e‑mail and name, sign‑in tokens</td><td>While you are signed in</td><td>Sign out in the App’s <em>Backup</em> settings.</td></tr>
+    <tr><td>Ad consent choice</td><td>Until you change it or remove the App</td><td>Change it with <em>Privacy settings</em> on the home screen; on iPhone and iPad change tracking in <em>Settings → Privacy &amp; Security → Tracking</em>.</td></tr>
+    <tr><td>Device backups</td><td>According to your backup settings</td><td>If Android backup is on, the App’s local data may be included in your Google backup; on iPhone and iPad it may be included in your iCloud or computer backup. Manage these in your device settings.</td></tr>
+    <tr><td>Analytics events and crash reports</td><td>See Section 5</td><td>Clearing the App’s data or reinstalling it gives the App a new identifier. To request earlier deletion, contact us (Section 13).</td></tr>
   </table>
-  <p>Analytics events and crash reports are kept by Google as described in Section 4.2. They are linked to an identifier of your installation, not to your name or Google account; clearing the App’s data or reinstalling it gives the App a new identifier. If you need help with a request about this data, contact us using the details in Section 11.</p>
 
-  <h2 id="security">8. Security</h2>
-  <p>All network communication between the App and Google is encrypted using TLS. Access to your Google Drive is limited to the application‑specific folder and can be revoked by you at any time. Data on your device is stored in the App’s private storage, which Android protects from other apps. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
+  <h2 id="security">10. Security</h2>
+  <p>All network communication between the App and Google is encrypted using TLS. Access to your Google Drive is limited to the application‑specific folder and can be revoked by you at any time. Data on your device is stored in the App’s private storage, which Android, or the app sandbox of iOS, protects from other apps; on iPhone and iPad the sign‑in is kept in the iOS Keychain. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
 
-  <h2 id="children">9. Children</h2>
+  <h2 id="children">11. Children</h2>
   <p>The App is a general‑audience utility and is not directed to children under 13 (or the equivalent minimum age in your jurisdiction). We do not knowingly collect personal information from children. If you believe a child has provided personal information through the App, please contact us so that we can assist in removing it.</p>
 
-  <h2 id="rights">10. Your rights</h2>
-  <p>Depending on where you live (for example in the European Economic Area, the United Kingdom, Switzerland or California), you may have rights to access, correct, delete, restrict or object to the processing of your personal data, and to data portability. Because the App stores your data on your device and in storage you control, you can exercise these rights directly: view and edit songs in the App, export them via <em>Share</em>, and delete them as described in Section 7. For any request you cannot fulfil yourself, contact us and we will respond within the period required by applicable law. You also have the right to lodge a complaint with your local data‑protection authority.</p>
+  <h2 id="rights">12. Your rights</h2>
+  <p>Depending on where you live (for example in the European Economic Area, the United Kingdom, Switzerland or California), you may have rights to access, correct, delete, restrict or object to the processing of your personal data, to data portability, and to withdraw your consent at any time (Section 4). Because the App stores your data on your device and in storage you control, you can exercise most of these rights directly: view and edit songs in the App, export them as a ZIP file or via <em>Share</em>, and delete them as described in Section 9. For any request you cannot fulfil yourself, contact us and we will respond within the period required by applicable law. You also have the right to lodge a complaint with your local data‑protection authority; in the Czech Republic it is the Office for Personal Data Protection (<a href="https://uoou.gov.cz" rel="noopener">uoou.gov.cz</a>).</p>
 
-  <h2 id="changes">11. Changes to this policy and contact</h2>
-  <p>We may update this Privacy Policy when the App changes or when required by law. The current version is always available at <a href="https://usharik.github.io/mysongbook/privacy-policy.html">https://usharik.github.io/mysongbook/privacy-policy.html</a>; the “Last updated” date at the top indicates the latest revision. Material changes will also be noted in the App’s Google Play release notes.</p>
+  <h2 id="changes">13. Changes to this policy and contact</h2>
+  <p>We may update this Privacy Policy when the App changes or when required by law. The current version is always available at <a href="https://usharik.github.io/mysongbook/privacy-policy.html">https://usharik.github.io/mysongbook/privacy-policy.html</a>; the “Last updated” date at the top indicates the latest revision. Material changes will also be noted in the App’s Google Play and App Store release notes.</p>
   <p>The controller of your personal data is <strong>Aleksei Usharovskii</strong>, sole trader, IČO 17943744, Netovice 47, 274 01 Slaný, Czech Republic. Questions, requests or concerns about this policy or your data can be sent to:<br>
      <a href="mailto:aleks.usharik@gmail.com">aleks.usharik@gmail.com</a> · <a href="https://github.com/usharik" rel="noopener">github.com/usharik</a></p>
 
-  <footer>© 2026 Aleksei Usharovskii. MySongBook is not affiliated with or endorsed by Google LLC. Google Play, Google Drive, Firebase and AdMob are trademarks of Google LLC.</footer>
+  <footer>© 2026 Aleksei Usharovskii. MySongBook is not affiliated with or endorsed by Google LLC or Apple Inc. Google Play, Google Drive, Firebase and AdMob are trademarks of Google LLC. App Store is a service mark of Apple Inc.; iPhone and iPad are trademarks of Apple Inc.</footer>
 </main>
 </body>
 </html>
