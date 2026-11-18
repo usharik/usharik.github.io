@@ -29,7 +29,7 @@
   <h1>Phaser Print – Privacy Policy</h1>
   <p class="meta">Application: <strong>Phaser Print</strong> (Android, package <code>ru.usharik.phaserprint</code>; iPhone and iPad, bundle ID <code>ru.usharik.phaserprint</code>)<br>
     Developer: Alexey Usharik (“we”, “us”)<br>
-    Effective date: 18 September 2026 · Last updated: 14 November 2026</p>
+    Effective date: 18 September 2026 · Last updated: 18 November 2026</p>
 
   <div class="summary">
     <strong>Summary</strong>
@@ -69,6 +69,7 @@
 
   <h2 id="printing">3. Printing and local network transfer</h2>
   <p>When you explicitly start a print job, the App sends the selected document’s rendered print data to the selected printer over your local Wi‑Fi network. Compatible older Xerox Phaser models use JetDirect/QPDL over TCP port <code>9100</code>. This is a user-initiated transfer to the destination you selected, not a transfer to the developer.</p>
+  <p>To recognise printers your phone can print to without the App (AirPrint on iPhone and iPad, Mopria or IPP Everywhere on Android), the App also reads the information printers announce on your local network over Bonjour/mDNS, including their IPP service; this information stays on your device. For such a printer the App can open the system print dialog with the document you picked: the operating system’s print service then prints it on the printer you choose in that dialog, and the App itself sends nothing to that printer.</p>
   <p>To show whether the printer is ready, out of paper, jammed or has its cover open, and how much toner is left, the App also asks the selected printer for its status over IPP (TCP port <code>631</code>, as AirPrint does) when it starts, when you switch printers and during and after each print job, on Android and on iPhone and iPad. This query goes only to that printer on your local network and prints nothing.</p>
   <p>Some older printers do not support encrypted transport for this protocol. Use the App on a trusted Wi‑Fi network and avoid sending confidential documents over networks you do not control.</p>
 
